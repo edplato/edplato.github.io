@@ -52,7 +52,6 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /*background-color: #465C8B;*/
   animation: bg-color 12s infinite;
   -webkit-animation: bg-color 12s infinite;
 }
@@ -169,7 +168,11 @@ header {
   margin-top: 16px;
 }
 .fa-bars {
-  color: #465c8b;
+  color: black;
+}
+#name-logo {
+  font-weight: 800;
+  letter-spacing: 4px;
 }
 #about {
   text-align: center;
