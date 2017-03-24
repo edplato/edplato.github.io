@@ -48,49 +48,11 @@ header {
   background: none;
 }
 header {
-  background: url("../assets/iconOverlayBg.png"), url("../assets/polygonBg.png");
+  background: url("../assets/iconOverlayBg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  animation: bg-color 12s infinite;
-  -webkit-animation: bg-color 12s infinite;
-}
-@-webkit-keyframes bg-color {
-  0% {
-    background-color: #93C178;
-  }
-  25% {
-    background-color: #465C8B;
-  }
-  50% {
-    background-color: #E87A0C;
-  }
-  75% {
-    background-color: #465C8B;
-  }
-  100% {
-    background-color: #93C178;
-  }
-}
-@keyframes bg-color {
-  0% {
-    background-color: #93C178;
-  }
-  25% {
-    background-color: #465C8B;
-  }
-  50% {
-    background-color: #E87A0C;
-  }
-  75% {
-    background-color: #465C8B;
-  }
-  100% {
-    background-color: #93C178;
-  }
-}
-.pageHTML {
-  display: none;
+  background-color: #465C8B;
 }
 .row {
   margin: 56px 24px;
@@ -171,6 +133,7 @@ header {
   color: black;
 }
 #name-logo {
+  white-space: nowrap;
   font-weight: 800;
   letter-spacing: 4px;
 }
@@ -185,21 +148,6 @@ header {
 #projects {
   margin-top: 0;
 }
-.navbar-default .nav>li>a:hover {
-  color: #0645cb !important;
-}
-.navbar-default.affix .nav>li>a:hover, .navbar-default.affix .nav>li>a:active, .navbar-default.affix .nav>li>a:focus {
-  color: #0645cb !important;
-}
-.navbar-default.affix .navbar-header .navbar-brand:hover {
-  color: #0645cb !important;
-}
-.navbar-default .nav>li.active>a, .navbar-default .nav>li.active>a:focus {
-  color: #0645cb !important;
-}
-.navbar-default.affix .navbar-header .navbar-brand:focus {
-  color: #0645cb;
-}
 @media (max-width: 995px) {
   #intro-bg {
     padding-left: 0px;
@@ -208,6 +156,10 @@ header {
   .intro h2 {
     animation: none;
     width: auto;
+  }
+  header {
+    
+    background-size: contain;
   }
   .col-md-8 {
     width: 80%;
@@ -221,14 +173,12 @@ header {
   #name-logo {
     color: black;
   }
-  #name-logo:hover {
-    color: #0645cb;
-  }
   .intro h2 {
     font-size: 20px;
   }
   header {
-    background: url("../assets/polygonBg.png");
+    background-image: none;
+    background-size: contain;
   }
   .divider {
     margin: 24px auto;
@@ -249,9 +199,25 @@ header {
     padding: 0 20px;
   }
 }
+@media (max-width: 250px) {
+  .navbar-toggle {
+    display: none;
+  }
+  .intro h2 {
+    display: none;
+  }
+  #name-logo {
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  .intro {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 footer {
   padding: 10px 0;
 }
 footer a:hover, footer a:active, footer a:focus {
-  color: #0645cb;
+  color: #fdcc52;
 }

@@ -1,7 +1,4 @@
 $(document).ready(function() {
-  $('#head').hide();
-  $('.pageHTML').fadeIn(400);
-  $('#head').show();
   navToggle();
 });
 
