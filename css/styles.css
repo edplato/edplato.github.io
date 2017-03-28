@@ -148,6 +148,9 @@ header {
 #projects {
   margin-top: 0;
 }
+#here {
+  color: blue;
+}
 @media (max-width: 995px) {
   #intro-bg {
     padding-left: 0px;

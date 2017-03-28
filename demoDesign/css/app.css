@@ -1,7 +1,7 @@
 #content {
   text-align: center;
   padding-top: 5%;
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4), 0px 3px 2px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4), 1px 3px 2px rgba(0, 0, 0, 0.1);
 }
 .container {
   padding-right: 0px
@@ -12,9 +12,10 @@
   margin-right: 0;
 }
 #spacedBrand {
-  letter-spacing: 0.1em;
+  letter-spacing: 0.3em;
   color: #1B3655;
   font-weight: 800;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
 }
 #spacedBrand:hover {
   color: white;
@@ -27,7 +28,7 @@
   padding-top: 50px;
   padding-bottom: 40px;
   width: 100%;
-  background: url("../images/tdesign1.png") center no-repeat;
+  background: url("../images/servicesBackground.png") center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -37,12 +38,13 @@
   width: 100%;
   max-width: 100%;
   padding-right: 0px;
+  padding-left: 0px;
   margin-right: 0px;
 }
 #eap {
   padding-left: 0;
   padding-right: 0;
-  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("../images/viscosity_180840.png");
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("../images/landingArea.png");
   background-size: cover;
   background-position: center;
   color: #1B3655;
@@ -54,7 +56,7 @@
 }
 #hamburger {
   background: white;
-  margin-right: 0.5em;
+  margin-right: 0.3em;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
   background-color: white;
@@ -62,18 +64,17 @@
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
   color: #f9cf00;
 }
-
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border: 0px;
 }
 .navbar-default .navbar-nav>li>a {
+  text-align: center;
   color: white;
 }
 .navbar-default .navbar-nav>li>a:hover {
   color: #f9cf00;
   text-shadow: 0px 1px 2px rgba(249, 207, 0, 0.3);  
 }
-
 .navbar-default .navbar-brand {
   color: white;
 }
@@ -86,7 +87,7 @@
 .btn-lg:hover, .btn-group-lg>.btn {
   border: 1px transparent solid;
   opacity: 1.0;
-  background: #1B3655;
+  background: #4484ce;
   color: white;
   outline: none;
 }
@@ -143,13 +144,10 @@
 }
 
 #rightArt {
-  /*height: 720px;*/
   max-height: 770px;
   height: 110%;
-  /*width: 85%;*/
   float: right;
   margin-right: 0;
-  /*bottom: 0;*/
   vertical-align: top;
 }
 #aboutUsRightArt {
@@ -158,10 +156,8 @@
 }
 
 #aboutUs {
-  /*padding-top: 20px;*/
   padding-right: 0px;
   margin-right: 0px;
-  /*margin-bottom: 20px;*/
   max-width: 100%;
 }
 
@@ -176,12 +172,12 @@ body {
   scroll-behavior: smooth;
 }
 h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.1em;
 
   padding-top: .5em;
-  font-weight: 700;
-  font-size: 4.5em;
+  font-weight: 800;
+  font-size: 3.8em;
 }
 html {
   scroll-behavior: smooth;
@@ -209,9 +205,9 @@ input {
 
 .btn-lg {
   margin-top: 8em;
-  -webkit-box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.23);
-  -moz-box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.23);
-  box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.23);
+  -webkit-box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.1);
+  box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.1);
 }
 
 #contactPlease {
