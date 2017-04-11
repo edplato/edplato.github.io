@@ -132,6 +132,10 @@ header {
 .fa-bars {
   color: black;
 }
+.navbar-default .nav>li>a {
+  font-size: 14px;
+  text-shadow: .2px .7px black;
+}
 #name-logo {
   white-space: nowrap;
   font-weight: 800;
