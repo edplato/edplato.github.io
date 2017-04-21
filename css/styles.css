@@ -118,6 +118,28 @@ header {
     opacity: .0;
   }
 }
+.scroll-arrow-down{
+  margin-top: 4em;
+  margin-left: 0;
+  margin-right: 0;
+}
+#scroll-arrow-down {
+  position: absolute;
+  animation: ArrowUpDown 2.5s ease-in-out infinite;
+  opacity: 0.8;
+  left: calc(50% - 0.65em);
+}
+@keyframes ArrowUpDown {
+  0% {
+    bottom: -100px;
+  }
+  50% {
+    bottom: -70px;
+  }
+  100% {
+    bottom: -100px;
+  }
+}
 .intro i {
   margin: 0 16px 24px;
 }
@@ -134,7 +156,7 @@ header {
 }
 .navbar-default .nav>li>a {
   font-size: 14px;
-  text-shadow: .2px .7px black;
+  text-shadow: .1px .4px rgba(0, 0, 0, 0.6);
 }
 #name-logo {
   white-space: nowrap;
@@ -152,7 +174,7 @@ header {
 #projects {
   margin-top: 0;
 }
-#here {
+#contact {
   color: blue;
 }
 @media (max-width: 995px) {
@@ -165,7 +187,7 @@ header {
     width: auto;
   }
   header {
-    
+    background-image: none;
     background-size: contain;
   }
   .col-md-8 {
@@ -182,10 +204,6 @@ header {
   }
   .intro h2 {
     font-size: 20px;
-  }
-  header {
-    background-image: none;
-    background-size: contain;
   }
   .divider {
     margin: 24px auto;
@@ -226,5 +244,5 @@ footer {
   padding: 10px 0;
 }
 footer a:hover, footer a:active, footer a:focus {
-  color: #fdcc52;
+  color: #0645cb;
 }
