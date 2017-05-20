@@ -118,11 +118,16 @@ header {
     opacity: .0;
   }
 }
+.about-down{
+  color: black;
+  margin-left: 12px;
+}
 .scroll-arrow-down{
   margin-top: 4em;
   margin-left: 0;
   margin-right: 0;
 }
+
 #scroll-arrow-down {
   position: absolute;
   animation: ArrowUpDown 2.5s ease-in-out infinite;
