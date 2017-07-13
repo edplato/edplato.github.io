@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>BPM Delay Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Raleway|Source+Sans+Pro" rel="stylesheet">
+</head>
+<body>
+<div class="bpmBox">
+	<h1>Beats Per Minute(BPM) Delay Calculator</h1>
+	<form>
+	  Input BPM:<br>
+	  <input type="text" id="formBpm" onkeypress="handleKeyPress(event)" autocomplete="off" maxlength="7">
+	</form>
+	<button class="button" id="submitButton" onclick="submitBpm()">submit</button>
+	<div class="calcHeadline clearText">
+	<h3><span class="bpmDisplay" id="bpmDisplay"></span> BPM</h3>
+	</div>
+<div class="line"></div>
+<div class="tables">
+  <div class="bpmText">
+	<h3>NOTES</h3>
+	<table>
+	<tbody class="notesTable"> 
+	    <tr><td>1/1:</td><td><span id="table-n1">0</span> ms</td></tr>
+	    <tr><td>1/2:</td><td><span id="table-n2">0</span> ms</td></tr>  
+	    <tr><td>1/4:</td><td><span id="table-n3">0</span> ms</td></tr>
+	    <tr><td>1/8:</td><td><span id="table-n4">0</span> ms</td></tr>
+	    <tr><td>1/16:</td><td><span id="table-n5">0</span> ms</td></tr>
+	    <tr><td>1/32:</td><td><span id="table-n6">0</span> ms</td></tr>
+	    <tr><td>1/64:</td><td><span id="table-n7">0</span> ms</td></tr>
+	    <tr><td>1/128:</td><td><span id="table-n8">0</span> ms</td></tr>
+	 </tbody>
+    </table>
+  </div>
+  <div class="bpmText">
+	<h3>TRIPLETS</h3>
+	<table>
+	<tbody class="tripletsTable"> 
+	    <tr><td>1/1:</td><td><span id="table-t1">0</span> ms</td></tr>
+	    <tr><td>1/2:</td><td><span id="table-t2">0</span> ms</td></tr>  
+	    <tr><td>1/4:</td><td><span id="table-t3">0</span> ms</td></tr>
+	    <tr><td>1/8:</td><td><span id="table-t4">0</span> ms</td></tr>
+	    <tr><td>1/16:</td><td><span id="table-t5">0</span> ms</td></tr>
+	    <tr><td>1/32:</td><td><span id="table-t6">0</span> ms</td></tr>
+	    <tr><td>1/64:</td><td><span id="table-t7">0</span> ms</td></tr>
+	    <tr><td>1/128:</td><td><span id="table-t8">0</span> ms</td></tr>
+	 </tbody>
+ 	</table>
+  </div>
+  <div class="bpmText">
+	<h3>DOTTED</h3>
+	<table>
+	<tbody class="dottedTable"> 
+	    <tr><td>1/1:</td><td><span id="table-d1">0</span> ms</td></tr>
+	    <tr><td>1/2:</td><td><span id="table-d2">0</span> ms</td></tr>  
+	    <tr><td>1/4:</td><td><span id="table-d3">0</span> ms</td></tr>
+	    <tr><td>1/8:</td><td><span id="table-d4">0</span> ms</td></tr>
+	    <tr><td>1/16:</td><td><span id="table-d5">0</span> ms</td></tr>
+	    <tr><td>1/32:</td><td><span id="table-d6">0</span> ms</td></tr>
+	    <tr><td>1/64:</td><td><span id="table-d7">0</span> ms</td></tr>
+	    <tr><td>1/128:</td><td><span id="table-d8">0</span> ms</td></tr>
+	 </tbody>
+    </table>
+  </div>
+</div>
+<p>1000 milliseconds (ms) = 1 second</p>
+<p><a class="createdBy" href="https://github.com/edplo" target="_blank">created by EAP</a></p>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="app.js"></script>
+<script
+  src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+</body>
+</html>

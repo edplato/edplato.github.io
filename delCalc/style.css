@@ -1,0 +1,171 @@
+html {
+	width: 100%;
+}
+
+body {
+  text-align:center;
+  background-color: #333;
+  color: #333;
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  margin: 0px auto 4px auto;
+}
+
+h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+  letter-spacing: 2.5px;
+}
+
+input {
+  text-align: center;
+  font-size: 25px;
+  width: 5em;
+  margin: 11px auto;
+  border-width: .2em;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #333;
+  outline: none;
+}
+
+div {
+  position:relative;
+  text-align:center;
+  z-index: 2;
+}
+
+table {
+  margin: 0 auto;
+  padding-left: .5em;
+  padding-right: .5em;
+  font-weight: 700;
+}
+
+a {
+  text-decoration:none;
+}
+
+.bpmDisplay {
+	font-size: 1.8em;
+	margin-left: .2em;
+}
+
+.calcHeadline {
+	text-align: center;
+	margin: 0 auto;
+  letter-spacing: 1.75px;
+}
+
+.line {
+  margin: 0 auto;
+  height: .5em;
+  background-color: #333;
+  width: 90%;
+  border-radius: 3px;
+}
+
+.tables {
+	width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 760px) {
+  table {
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 690px) {
+	body{
+		text-align: center;
+	}
+	.tables {
+		text-align: center;
+		justify-content: center;
+		flex-direction: column;
+		width:100%; 
+	}
+	table {
+		text-align: center;
+		flex-direction: column;
+	  padding-left: .1em;
+	  padding-right: .1em;
+    font-weight: 800;
+    font-size: 1.4em;
+	}
+}
+
+@media (max-width: 420px) {
+  table {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 340px) {
+  table {
+    font-size: 1.1em;
+  }
+}
+
+.bpmBox {
+  border-radius:3px;
+  position:relative;
+  margin:1% auto auto auto;
+  padding: 1%;
+  display:table;
+  background-color:#fff;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+.bpmText, .calcHeadline {
+  text-align:center;
+  height:auto;
+  clear:both;
+  font-weight:500;
+  font-size:1.4em;
+}
+
+.bpmText td {
+  padding-top: .3em;
+}
+
+.button {
+  height:44px;
+  border:none;
+  border-radius:3px;
+  color:#fff;
+  background-color:#333;
+  outline:none;
+  font-size:0.85em;
+  padding: 8px 18px 6px 19px;
+  opacity:1;
+  cursor:pointer;
+  letter-spacing: 4.5px;
+}
+
+.button::-moz-focus-inner {
+  border: 0;
+}
+
+.button:hover {
+  opacity:0.9;
+}
+
+.createdBy {
+  text-align:center;
+  display:block;
+  margin:15px auto 0px auto;
+  font-size:0.8em;
+  color:#333;
+  letter-spacing: 1.5px;
+}
+
+.clearText {
+  color: transparent;
+}
