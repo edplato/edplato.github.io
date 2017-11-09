@@ -14,12 +14,13 @@
   <meta property="og:title" content="Ed Plato | Web Developer Portfolio"/>
 
   <meta property="og:image" content="assets/portfolioThumbnail.png"/>
-  <meta property="og:description" content="HTML5, CSS3, Javascript, React, jQuery, Node.js, and more."/>
+  <meta property="og:description" content="Javascript, React, HTML5, CSS3, Node.JS, MongoDB, and more."/>
   <meta property="og:url" content="https://edplato.github.io/"/>
 
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="./favicon.ico">
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:200,300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/animate.css" rel="stylesheet">
   <link href="css/new-age.min.css" rel="stylesheet">
@@ -65,7 +66,7 @@
           <h2>let's build something <span id="line">|</span></h2>
           <div class="social-media-icons">
             <a href="https://github.com/edplato" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa fa-github fa-3x animated pulse"></i></a>
-            <a href="https://twitter.com/eaplato" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa fa-twitter fa-3x animated pulse"></i></a>
+            <a href="https://www.linkedin.com/in/edplato" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa fa-linkedin-square fa-3x animated pulse"></i></a>
             <a href="mailto:edplatomail@gmail.com"><i aria-hidden="true" class="fa fa-envelope fa-3x animated pulse"></i></a>
           </div>
           <div class="scroll-arrow-down">
@@ -79,10 +80,24 @@
     <div class="col-md-2"></div>
     <div class="col-md-8">
       <h2 class="titles">About Me</h2>
-      <p>I'm Ed Plato, a Full Stack Developer who loves to create intuitive web applications and learn new technologies. I build with the help of my favorite language, Javascript.<br>
+      <p>As a software engineer specializing in full stack Javascript, I thrive on working with problems resolved through analytical thinking and creative solutions. I love to develop intuitive web applications and learn new technologies.
       <br>
       <br>
-      My primary technologies of interest are <strong>Javascript</strong>, <strong>HTML/CSS</strong>, and <strong>React</strong>. I also rely on regularly building with jQuery, Node, Bootstrap, Express.js, MongoDB, and Photoshop.<br>
+      <p>Here are a few of my technologies of interest, so far:</p>
+      <i class="devicon devicon-javascript-plain"></i>
+      <i class="devicon devicon-react-original-wordmark"></i>
+      <i class="devicon devicon-nodejs-plain-wordmark"></i>
+      <i class="devicon devicon-express-original-wordmark"></i>
+      <i class="devicon devicon-mongodb-plain-wordmark"></i>
+      <i class="devicon devicon-webpack-plain-wordmark"></i>
+      <i class="devicon devicon-angularjs-plain-wordmark"></i>
+      <i class="devicon devicon-html5-plain-wordmark"></i>
+      <i class="devicon devicon-css3-plain-wordmark"></i>
+      <i class="devicon devicon-bootstrap-plain-wordmark"></i>
+      <i class="devicon devicon-mocha-plain"></i>
+      <i class="devicon devicon-github-plain"></i>
+      <i class="devicon devicon-heroku-original-wordmark"></i>
+      <br>
       <br>
       <br>
       Think we should work together?
@@ -97,13 +112,37 @@
 <div class="divider" id="projects"></div>
   <div class="row project">
     <div class="col-md-6">
+      <a href="https://github.com/CrewBuilder/crew-builder" rel="noopener noreferrer" target="_blank"><img alt="Flick Pick" class="img-responsive" src="assets/crewBuilderThumbnail.png"></a>
+    </div>
+    <div class="col-md-6">
+      <h3>Crew Builder</h3>
+      <h5>Web Application</h5>
+      <h5>NodeJs / Express / PostgreSQL / React / Mocha / Chai</h5>
+      <p>Crew Builder is a social platform for building support through motivating engagement created as a collaborative effort. My main contributions were initializing our NodeJs/Express back-end, developing custom features for the responsive React front-end using React-Bootstrap, integrating continuous GitHub deployment to Heroku, and structuring our Mocha server tests. I also developed space-saving Webpack builds for our development and production needs.</p><a class="btn btn-primary" href="https://github.com/CrewBuilder/crew-builder" rel="noopener noreferrer" target="_blank">View Repo</a>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="row project">
+    <div class="col-md-6">
+      <a href="https://github.com/TopHatHR/sit-n-paws" rel="noopener noreferrer" target="_blank"><img alt="Flick Pick" class="img-responsive" src="assets/sitnpawsThumbnail.png"></a>
+    </div>
+    <div class="col-md-6">
+      <h3>sit-n-paws</h3>
+      <h5>Web Application</h5>
+      <h5>NodeJs / MongoDB / Express / React / Material-UI</h5>
+      <p>This MERN application was developed to match pet owners with hosts to watch their pets. The front-end was built with custom Material-UI components and user authentication was handled through API served JSON Web Token protected routes using React-Router. I created unit testing using Mocha/Chai and developed a MongoDB data seed tool.</p><a class="btn btn-primary" href="https://github.com/TopHatHR/sit-n-paws" rel="noopener noreferrer" target="_blank">View Repo</a>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="row project">
+    <div class="col-md-6">
       <a href="https://flickpick.herokuapp.com/" rel="noopener noreferrer" target="_blank"><img alt="Flick Pick" class="img-responsive" src="assets/flickpickThumbnail.png"></a>
     </div>
     <div class="col-md-6">
       <h3>Flick Pick - Movie Search</h3>
-      <h5>RESTful Web Application</h5>
+      <h5>Web Application</h5>
       <h5>NodeJs / MongoDB / Express / JavaScript / Bootstrap</h5>
-      <p>This MVC application was created to help narrow down movie choices by allowing the user to search movies, retrieve detailed information, provide IMDB links, and save movies to watch for later. It uses routed API's to search movie data, parse JSON results to a temporary movie pool(anonymously or logged in), and store client associated data. This RESTful application was built on MongoDB mLab for data storage, Express(with EJS), and Node.js.</p><a class="btn btn-primary" href="https://flickpick.herokuapp.com/" rel="noopener noreferrer" target="_blank">View Live</a> <a class="btn btn-primary" href="https://github.com/edplato/filmcompare" rel="noopener noreferrer" target="_blank">View Repo</a>
+      <p>This application was created to help narrow down movie choices by searching for movies, retrieving detailed information, providing IMDB links, and saving movies to watch for later. It uses routed API's to fetch data, add to a temporary movie pool(anonymously or logged in), and store client associated data. This RESTful application was built using MongoDB mLab for data storage, Express(with EJS), and NodeJs.</p><a class="btn btn-primary" href="https://flickpick.herokuapp.com/" rel="noopener noreferrer" target="_blank">View Live</a> <a class="btn btn-primary" href="https://github.com/edplato/filmcompare" rel="noopener noreferrer" target="_blank">View Repo</a>
     </div>
   </div>
   <div class="divider"></div>
@@ -115,7 +154,7 @@
       <h3>MST3K Episode Quick Guide</h3>
       <h5>Web Application</h5>
       <h5>React / React Router / JSX / CSS</h5>
-      <p>This React application is a mobile-first design episode guide for the show Mystery Science Theater 3000. The user can toggle through seasons, episodes, and link to IMDB and YouTube. A search view allows the user to find episode information by title query. JSON requests handled with Axios client.</p><a class="btn btn-primary" href="https://mst3kquickguide.herokuapp.com/" rel="noopener noreferrer" target="_blank">View Live</a> <a class="btn btn-primary" href="https://github.com/edplato/mst3kquickguide" rel="noopener noreferrer" target="_blank">View Repo</a>
+      <p>This React application is a mobile-first design episode guide for the show Mystery Science Theater 3000. It allows you to toggle through seasons, episodes, and link to IMDB and YouTube. A search feature provides  episodes by title query. Client-side requests are handled with Axios client.</p><a class="btn btn-primary" href="https://mst3kquickguide.herokuapp.com/" rel="noopener noreferrer" target="_blank">View Live</a> <a class="btn btn-primary" href="https://github.com/edplato/mst3kquickguide" rel="noopener noreferrer" target="_blank">View Repo</a>
     </div>
   </div>
   <div class="divider"></div>
@@ -139,7 +178,7 @@
       <h3>Number Match</h3>
       <h5>Web Application</h5>
       <h5>JavaScript / jQuery / Bootstrap / HTML / CSS</h5>
-      <p>Number Match was created as a learning tool for my niece. I wanted to make a responsive and colorful app that she could play on various devices. An interesting aspect of creating this application was the need for a shuffle algorithm to cycle through remaining indexes in an array. Designed for Chrome browsers. Currently working on increased cross-browser support.</p><a class="btn btn-primary" href="https://edplato.github.io/numberMatch/numbermatch.html" rel="noopener noreferrer" target="_blank">View Live</a> <a class="btn btn-primary" href="https://github.com/edplato/numbermatch" rel="noopener noreferrer" target="_blank">View Repo</a>
+      <p>Number Match was created as a learning tool for my niece. I wanted to make a responsive and colorful app that she could play on various devices. Designed and tested for Chrome.</p><a class="btn btn-primary" href="https://edplato.github.io/numberMatch/numbermatch.html" rel="noopener noreferrer" target="_blank">View Live</a> <a class="btn btn-primary" href="https://github.com/edplato/numbermatch" rel="noopener noreferrer" target="_blank">View Repo</a>
     </div>
   </div>
   <div class="divider"></div>
