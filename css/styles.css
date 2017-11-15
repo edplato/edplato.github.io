@@ -26,6 +26,7 @@ Theme elements from Bootstrap New Age CSS have been used to style this page
 
 body {
   font-family: 'Montserrat', sans-serif;
+  user-select: none;
 }
 
 h3 {
@@ -185,6 +186,10 @@ header {
   opacity: 0.8;
 }
 
+.projects {
+  background: #fbfbfc;
+}
+
 .project p {
   color: rgba(0, 0, 0, 0.5);
   margin-top: 16px;
@@ -208,7 +213,9 @@ header {
 #about {
   text-align: center;
   background-image: url("../assets/shapes48TpBg.png");
+  position: relative;
   background-size: cover;
+  background-attachment: fixed;
   margin: 0 auto;
   padding-top: 5%;
   padding-bottom: 15%;
