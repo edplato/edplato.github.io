@@ -18,7 +18,15 @@ function generateHTML(i) {
 };
 
 // create image boxes to DOM
-const html = Array.from({ length: photoCount }).map((current, i = 1) => generateHTML(i+1)).join('');
+const html = Array.from({ length: photoCount }).map((current, i = 1) => {
+  if (i === 13) {
+    let loadingText = document.querySelector('.loading');
+    loadingText.style.opacity = '0';
+    let summaryText = document.querySelector('.summary-text');
+    summaryText.style.paddingTop = '2.5em';
+  }
+  return generateHTML(i+1);
+}).join('');
 gallery.innerHTML += html;
 const items = document.querySelectorAll('.img-box');
 
