@@ -6,10 +6,10 @@ const overlayClose = overlay.querySelector('.close');
 const photoCount = 14;
 
 // generate number of img boxes per photocount
-function generateHTML(i) {
+function generateHTML(i, loaded) {
   return `
     <div class="img-box">
-      <img src="photos/${i}.jpg">
+      <img src="photos/${i}.jpg" ${loaded ? `onload="clearLoading()"` : null}>
       <div class="img-box-overlay">
         <button class="view-img">View →</button>
       </div>
@@ -17,15 +17,20 @@ function generateHTML(i) {
   `;
 };
 
+function clearLoading() {
+  let loadingText = document.querySelector('.loading');
+  loadingText.style.opacity = '0';
+  let summaryText = document.querySelector('.summary-text');
+  summaryText.style.paddingTop = '2.5em';
+}
+
 // create image boxes to DOM
 const html = Array.from({ length: photoCount }).map((current, i = 1) => {
   if (i === 13) {
-    let loadingText = document.querySelector('.loading');
-    loadingText.style.opacity = '0';
-    let summaryText = document.querySelector('.summary-text');
-    summaryText.style.paddingTop = '2.5em';
+    return generateHTML(i+1, 'loaded');
+  } else {
+    return generateHTML(i+1);
   }
-  return generateHTML(i+1);
 }).join('');
 gallery.innerHTML += html;
 const items = document.querySelectorAll('.img-box');
