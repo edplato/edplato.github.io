@@ -47,7 +47,7 @@ p {
 }
 
 i {
-  color: white;
+  color: #fff;
 }
 
 header {
@@ -118,7 +118,7 @@ header {
 .btn-primary:focus {
   color: #0645cb;
   border: 2px solid #0645cb;
-  background-color: white;
+  background-color: #fff;
   font-size: 12px;
   padding: 8px 16px;
   border-radius: 4px;
@@ -126,7 +126,7 @@ header {
 
 .btn-primary:hover {
   background-color: #0645cb;
-  color: white;
+  color: #fff;
   border: 2px solid #0645cb;
 }
 
@@ -218,7 +218,17 @@ header {
 }
 
 .fa-bars {
-  color: black;
+  color: #222;
+}
+
+.footer-photo {
+  padding-left: 5px;
+  color: rgba(255, 255, 255, 0.3);
+  transition: color 0.8s;
+}
+
+.footer-photo:hover {
+  color: #0645cb;
 }
 
 .navbar-default .nav>li>a {
@@ -248,7 +258,7 @@ header {
 }
 
 #contact {
-  color: blue;
+  color: rgb(0, 0, 255);
 }
 
 @media (max-width: 995px) {
@@ -275,7 +285,7 @@ header {
     text-align: center;
   }
   #name-logo {
-    color: black;
+    color: #222;
   }
   .intro h2 {
     font-size: 20px;
