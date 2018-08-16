@@ -1,3 +1,4 @@
+/* APP */
 html {
   box-sizing: border-box;
 }
@@ -36,37 +37,6 @@ header h1 {
   color: #222;
 }
 
-.close {
-  background: none;
-  color: rgba(0, 0, 0, 0.5);
-  padding-right: 0;
-  border: 0;
-  font-size: 1.75vmax;
-  font-weight: bold;
-  float: right;
-  transition: all 0.8s;
-}
-
-.close:hover,
-.view-img:hover {
-  cursor: pointer;
-  color: #222;
-}
-
-.gallery {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-auto-rows: 200px;
-}
-
-.img-box {
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 1;
-}
-
 .summary-text {
   align-items: center;
   text-align: center;
@@ -78,39 +48,7 @@ header h1 {
   letter-spacing: 1px;
 }
 
-.img-box img {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.img-box-overlay {
-  background: #ffc60032;
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-  position: relative;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  transition: 0.2s;
-  transform: translateY(100%);
-}
-
-.img-box-overlay button {
-  background: none;
-  border: 2px solid #fff;
-  color: #fff;
-  text-transform: uppercase;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 5px;
-}
-
-.img-box:hover .img-box-overlay {
-  transform: translateY(0);
-}
-
+/* OVERLAY */
 .overlay {
   position: fixed;
   background: rgba(0, 0, 0, 0.7);
@@ -140,6 +78,110 @@ header h1 {
   max-height: 90vh;
 }
 
+.close {
+  background: none;
+  color: rgba(0, 0, 0, 0.5);
+  padding-right: 0;
+  border: 0;
+  font-size: 1.75vmax;
+  font-weight: bold;
+  float: right;
+  transition: all 0.8s;
+}
+
+.close:hover,
+.view-img:hover {
+  cursor: pointer;
+  color: #222;
+}
+
+.gallery {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+}
+
+.view-img {
+  overflow:hidden;
+}
+
+.img-box {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1;
+}
+
+.img-box img {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* oversized overlay for animation bounce */
+.img-box-overlay {
+  background: rgba(185, 230, 89, 0.3);
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transform: translateY(100%);
+  height: 105%;
+}
+
+/* view image button with slide from left background animation */
+.img-box-overlay button {
+  width: 40%;
+  height: 20%;
+  margin-bottom: 5%;
+  display: block;
+  background: rgba(185, 230, 89, 0.5);
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #fff;
+  background-image: linear-gradient(to left,
+    transparent,
+    transparent 50%,
+    #B9E659 50%,
+    #B9E659);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
+}
+
+.img-box-overlay button:hover {
+  background-position: 0 0;
+}
+
+.img-box:hover .img-box-overlay {
+  transform: translateY(0);
+  animation-name: bounce;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(100%);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  55% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* handle different image dimensions */
 .tallimg {
   width: 33vw;
   transition: width 0.8s;
@@ -154,6 +196,7 @@ header h1 {
   max-height: 80vh;
 }
 
+/* LOADING */
 .loading { 
   align-self: start;
   font-size: 1.25em;
@@ -189,6 +232,7 @@ header h1 {
   animation-delay: .4s;
 }
 
+/* MEDIA QUERIES */
 @media (max-width: 768px) {
   .overlay-inner {
     width: 100%;

@@ -11,7 +11,7 @@ function generateHTML(i, loaded) {
     <div class="img-box">
       <img src="photos/${i}.jpg" ${loaded ? `onload="clearLoading()"` : null}>
       <div class="img-box-overlay">
-        <button class="view-img">View →</button>
+        <button class="view-img">View &#10145;</button>
       </div>
     </div>
   `;
