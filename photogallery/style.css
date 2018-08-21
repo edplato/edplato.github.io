@@ -235,7 +235,12 @@ header h1 {
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
   .overlay-inner {
-    width: 100%;
+    width: 80%;
+  }
+  
+  .img-box:hover .img-box-overlay {
+    transform: translateY(100%);
+    animation-name: none;
   }
 }
 
