@@ -18,6 +18,10 @@ function generateHTML(i, loaded) {
 };
 
 function clearLoading() {
+  // allow overlay bounce hover effect to be visible
+  let imageBoxOverlay = document.querySelectorAll('.img-box-overlay');
+  imageBoxOverlay.forEach(overlay => overlay.style.opacity = '1');
+  // clear loading text in first summary imgbox
   let loadingText = document.querySelector('.loading');
   loadingText.style.opacity = '0';
   let summaryText = document.querySelector('.summary-text');
