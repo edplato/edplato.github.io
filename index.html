@@ -14,13 +14,13 @@
   <meta property="og:title" content="Ed Plato | Web Development Portfolio"/>
 
   <meta property="og:image" content="assets/portfolioThumbnail.png"/>
-  <meta property="og:description" content="Javascript, React, HTML5, CSS3, Node.JS, MongoDB, and more."/>
+  <meta property="og:description" content="Javascript, React, Redux, HTML5, CSS3, Node.JS, MongoDB, and more."/>
   <meta property="og:url" content="https://edplato.github.io/"/>
 
   <link rel="shortcut icon" href="./favicon.ico">
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:200,300,400" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/animate.css" rel="stylesheet">
   <link href="css/new-age.min.css" rel="stylesheet">
@@ -80,13 +80,14 @@
     <div class="col-md-2"></div>
     <div class="col-md-8">
       <h2 class="titles">About Me</h2>
-      <p>As a software engineer specializing in full stack Javascript, I thrive on working with problems resolved through analytical thinking and creative solutions. I love to develop intuitive web applications and apply new technologies.</p>
+      <p>As a software engineer specializing in full-stack JavaScript and having worked frequently with many other languages, I thrive on working with problems resolved through analytical thinking, simplification, and creative solutions. I love to develop intuitive web applications and apply progressive performance build strategies to reduce server load and speed up user experiences.</p>
       <br>
       <br>
       <p>Here are a few of my technologies of interest, so far:</p>
       <div class="tech-grid">
         <i class="devicon devicon-javascript-plain"></i>
         <i class="devicon devicon-react-original-wordmark"></i>
+        <i class="devicon devicon-redux-original"></i>
         <i class="devicon devicon-babel-plain"></i>
         <i class="devicon devicon-nodejs-plain-wordmark"></i>
         <i class="devicon devicon-express-original-wordmark"></i>
@@ -96,9 +97,13 @@
         <i class="devicon devicon-jquery-plain-wordmark"></i>
         <i class="devicon devicon-html5-plain-wordmark"></i>
         <i class="devicon devicon-css3-plain-wordmark"></i>
+        <i class="devicon devicon-sass-original"></i>
         <i class="devicon devicon-bootstrap-plain-wordmark"></i>
         <i class="devicon devicon-mocha-plain"></i>
-        <i class="devicon devicon-github-plain-wordmark"></i>
+        <i class="devicon devicon-jest-plain"></i>
+        <i class="devicon devicon-github-original"></i>
+        <i class="devicon devicon-bitbucket-original-wordmark"></i>
+        <i class="devicon devicon-python-plain-wordmark"></i>
         <i class="devicon devicon-docker-plain-wordmark"></i>
         <i class="devicon devicon-heroku-original-wordmark"></i>
         <i class="devicon devicon-slack-plain-wordmark"></i>
@@ -121,49 +126,25 @@
 <div class="divider" id="projects"></div>
   <div class="row project">
     <div class="col-md-6">
-      <a href="https://crew-builder.herokuapp.com/" rel="noopener noreferrer" target="_blank"><img alt="Crew Builder" class="img-responsive" src="assets/crewBuilderThumbnail.png"></a>
+      <a href="https://worldview.earthdata.nasa.gov/" rel="noopener noreferrer" target="_blank"><img alt="NASA Worldview" class="img-responsive" src="assets/worldviewThumbnail.jpg"></a>
     </div>
     <div class="col-md-6">
-      <h3 class="app-name">Crew Builder</h3>
+      <h3 class="app-name">NASA Worldview</h3>
       <h5>Web Application</h5>
-      <h5>NodeJs / Express / PostgreSQL / React / Mocha / Chai</h5>
-      <p>Crew Builder is a social platform for building support through motivating engagement created as a collaborative effort. My main contributions were initializing our NodeJs/Express back-end, developing custom features for the responsive React front-end using React-Bootstrap, integrating continuous GitHub deployment to Heroku, and structuring our Mocha server tests. I also developed space-saving Webpack builds for our development and production needs.</p><a class="btn btn-primary" href="https://crew-builder.herokuapp.com/" rel="noopener noreferrer" target="_blank">View Live</a> <a class="btn btn-primary" href="https://github.com/CrewBuilder/crew-builder" rel="noopener noreferrer" target="_blank">View Repo</a>
+      <h5>NodeJs / Python / Redux / React / Nightwatch / Jest</h5>
+      <p>I have been developing on the NASA Worldview application with an AGILE team since 2018. NASA Worldview provides a satellite's perspective of the planet as it looks today and as it has in the past. Worldview provides the capability to interactively browse 800+ global, full-resolution satellite imagery layers accessing multiple APIs, and download underlying science data. Many of the imagery layers are updated within three hours of observation, essentially showing the Earth as it looks "right now". This supports time-critical areas such as wildfire management, air quality measurements, and flood monitoring.</p><a class="btn btn-primary" href="https://worldview.earthdata.nasa.gov/" rel="noopener noreferrer" target="_blank">View Live</a> <a class="btn btn-primary" href="https://github.com/nasa-gibs/worldview" rel="noopener noreferrer" target="_blank">View Repo</a>
     </div>
   </div>
   <div class="divider"></div>
   <div class="row project">
     <div class="col-md-6">
-      <a href="https://sitnpaws.co.uk/" rel="noopener noreferrer" target="_blank"><img alt="SitnPaws" class="img-responsive" src="assets/sitnpawsThumbnail.png"></a>
+      <a href="https://wvs.earthdata.nasa.gov/" rel="noopener noreferrer" target="_blank"><img alt="NASA Snapshots" class="img-responsive" src="assets/snapshotsThumbnail.jpg"></a>
     </div>
     <div class="col-md-6">
-      <h3 class="app-name">sit-n-paws</h3>
+      <h3 class="app-name">NASA Snapshots</h3>
       <h5>Web Application</h5>
-      <h5>NodeJs / MongoDB / Express / React / Material-UI</h5>
-      <p>This MERN application was developed to match pet owners with hosts to watch their pets. The front-end was built with custom Material-UI components and user authentication was handled through API served JSON Web Token protected routes using React-Router. I created unit testing using Mocha/Chai and developed a MongoDB data seed tool.</p><a class="btn btn-primary" href="https://sitnpaws.co.uk/" rel="noopener noreferrer" target="_blank">View Live</a> <a class="btn btn-primary" href="https://github.com/TopHatHR/sit-n-paws" rel="noopener noreferrer" target="_blank">View Repo</a>
-    </div>
-  </div>
-  <div class="divider"></div>
-  <div class="row project">
-    <div class="col-md-6">
-      <a href="https://flickpick.herokuapp.com/" rel="noopener noreferrer" target="_blank"><img alt="Flick Pick" class="img-responsive" src="assets/flickpickThumbnail.png"></a>
-    </div>
-    <div class="col-md-6">
-      <h3 class="app-name">Flick Pick - Movie Search</h3>
-      <h5>Web Application</h5>
-      <h5>NodeJs / MongoDB / Express / JavaScript / Bootstrap</h5>
-      <p>This application was created to help narrow down movie choices by searching for movies, retrieving detailed information, providing IMDB links, and saving movies to watch for later. It uses routed API's to fetch data, add to a temporary movie pool(anonymously or logged in), and store client associated data. This RESTful application was built using MongoDB mLab for data storage, Express(with EJS), and NodeJs.</p><a class="btn btn-primary" href="https://flickpick.herokuapp.com/" rel="noopener noreferrer" target="_blank">View Live</a> <a class="btn btn-primary" href="https://github.com/edplato/filmcompare" rel="noopener noreferrer" target="_blank">View Repo</a>
-    </div>
-  </div>
-  <div class="divider"></div>
-  <div class="row project">
-    <div class="col-md-6">
-      <a href="https://github.com/edplato/mvp" rel="noopener noreferrer" target="_blank"><img alt="SuggesTUNES" class="img-responsive" src="assets/suggestunesSmall.png"></a>
-    </div>
-    <div class="col-md-6">
-      <h3 class="app-name">SuggesTUNES</h3>
-      <h5>Web Application</h5>
-      <h5>AngularJS / NodeJS / MongoDB / Bootstrap</h5>
-      <p>SuggesTUNES is a music exploration application with JSON search queries handled through the LastFM API. Search results are initially populated with current top artists and top genres from LastFM. Suggest music based on top artists, genres, and find detailed artist information including similar artists.</p><a class="btn btn-primary" href="https://github.com/edplato/mvp" rel="noopener noreferrer" target="_blank">View Repo</a>
+      <h5>Docker / PHP / Python / Bash / JavaScript / Bootstrap</h5>
+      <p>Worldview Snapshots is a lightweight, lower bandwidth tool for creating multiple format image snapshots from a selection of popular NASA satellite the Global Imagery Browse Services (GIBS) API imagery layers. You can preview and download imagery in different band combinations and add overlays on the imagery of active fire detections, coastlines, borders and roads.</p><a class="btn btn-primary" href="https://wvs.earthdata.nasa.gov/" rel="noopener noreferrer" target="_blank">View Live</a>
     </div>
   </div>
   <div class="divider"></div>
@@ -176,6 +157,54 @@
       <h5>Web Application</h5>
       <h5>React / React Router / JSX / CSS</h5>
       <p>This React application is a mobile-first design episode guide for the show Mystery Science Theater 3000. It allows you to toggle through seasons, episodes, and link to IMDB and YouTube. A search feature provides  episodes by title query. Client-side requests are handled with Axios client.</p><a class="btn btn-primary" href="https://mst3kquickguide.herokuapp.com/" rel="noopener noreferrer" target="_blank">View Live</a> <a class="btn btn-primary" href="https://github.com/edplato/mst3kquickguide" rel="noopener noreferrer" target="_blank">View Repo</a>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="row project">
+    <div class="col-md-6">
+      <a href="https://crew-builder.herokuapp.com/" rel="noopener noreferrer" target="_blank"><img alt="Crew Builder" class="img-responsive" src="assets/crewBuilderThumbnail.png"></a>
+    </div>
+    <div class="col-md-6">
+      <h3 class="app-name">Crew Builder</h3>
+      <h5>Web Application</h5>
+      <h5>NodeJs / Express / PostgreSQL / React / Mocha / Chai</h5>
+      <p>Crew Builder is a social platform for building support through motivating engagement created as a collaborative effort. My main contributions were initializing our NodeJs/Express back-end, developing custom features for the responsive React front-end using React-Bootstrap, integrating continuous GitHub deployment to Heroku, and structuring our Mocha server tests. I also developed space-saving Webpack builds for our development and production needs.</p><a class="btn btn-primary" href="https://github.com/CrewBuilder/crew-builder" rel="noopener noreferrer" target="_blank">View Repo</a>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="row project">
+    <div class="col-md-6">
+      <a href="https://sitnpaws.co.uk/" rel="noopener noreferrer" target="_blank"><img alt="SitnPaws" class="img-responsive" src="assets/sitnpawsThumbnail.png"></a>
+    </div>
+    <div class="col-md-6">
+      <h3 class="app-name">sit-n-paws</h3>
+      <h5>Web Application</h5>
+      <h5>NodeJs / MongoDB / Express / React / Material-UI</h5>
+      <p>This MERN application was developed to match pet owners with hosts to watch their pets. The front-end was built with custom Material-UI components and user authentication was handled through API served JSON Web Token protected routes using React-Router. I created unit testing using Mocha/Chai and developed a MongoDB data seed tool.</p><a class="btn btn-primary" href="https://github.com/TopHatHR/sit-n-paws" rel="noopener noreferrer" target="_blank">View Repo</a>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="row project">
+    <div class="col-md-6">
+      <a href="https://flickpick.herokuapp.com/" rel="noopener noreferrer" target="_blank"><img alt="Flick Pick" class="img-responsive" src="assets/flickpickThumbnail.png"></a>
+    </div>
+    <div class="col-md-6">
+      <h3 class="app-name">Flick Pick - Movie Search</h3>
+      <h5>Web Application</h5>
+      <h5>NodeJs / MongoDB / Express / JavaScript / Bootstrap</h5>
+      <p>This application was created to help narrow down movie choices by searching for movies, retrieving detailed information, providing IMDB links, and saving movies to watch for later. It uses routed API's to fetch data, add to a temporary movie pool(anonymously or logged in), and store client associated data. This RESTful application was built using MongoDB mLab for data storage, Express(with EJS), and NodeJs.</p><a class="btn btn-primary" href="https://github.com/edplato/filmcompare" rel="noopener noreferrer" target="_blank">View Repo</a>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="row project">
+    <div class="col-md-6">
+      <a href="https://github.com/edplato/mvp" rel="noopener noreferrer" target="_blank"><img alt="SuggesTUNES" class="img-responsive" src="assets/suggestunesSmall.png"></a>
+    </div>
+    <div class="col-md-6">
+      <h3 class="app-name">SuggesTUNES</h3>
+      <h5>Web Application</h5>
+      <h5>AngularJS / NodeJS / MongoDB / Bootstrap</h5>
+      <p>SuggesTUNES is a music exploration application with JSON search queries handled through the LastFM API. Search results are initially populated with current top artists and top genres from LastFM. Suggest music based on top artists, genres, and find detailed artist information including similar artists.</p><a class="btn btn-primary" href="https://github.com/edplato/mvp" rel="noopener noreferrer" target="_blank">View Repo</a>
     </div>
   </div>
   <div class="divider"></div>
@@ -217,7 +246,7 @@
 </div>
   <footer>
     <div class="container">
-      <p>&copy; 2017 Ed Plato <a href="./photogallery/index.html" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa fa-camera footer-photo"></i></a></p>
+      <p>&copy; 2021 Ed Plato <a href="./photogallery/index.html" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa fa-camera footer-photo"></i></a></p>
       <ul class="list-inline">
         <li>
           <a href="https://github.com/edplato" rel="noopener noreferrer" target="_blank">Github</a>
